@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.BaseLibrary" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--    appbar background color    -->
+        <item name="colorPrimary">@color/color_black_333</item>
+
+        <item name="colorPrimaryVariant">@color/color_black_202020</item>
+
+        <!-- ⼀般控件的选中效果默认采⽤该颜⾊,如 CheckBox,RadioButton,SwitchCompat，ProcessBar等-->
+        <!--        <item name="colorAccent">@color/color_black_333</item>-->
+
+        <!--    status bar background color    -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="skinTypeface">@string/skin_ttf_chu_chen_ti</item>
+
+    </style>
+
+</resources>

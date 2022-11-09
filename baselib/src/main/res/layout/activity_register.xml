@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.sign.RegisterActivity">
+
+    <ImageView
+        android:id="@+id/img_register_close"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_margin="@dimen/dp_30"
+        android:src="@drawable/ic_clear_30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:textColor="@color/color_black_333"
+        android:textSize="@dimen/dp_40"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/img_register_close"
+        app:layout_constraintStart_toEndOf="@+id/img_register_close"
+        app:layout_constraintTop_toTopOf="@+id/img_register_close" />
+
+    <com.devmeng.baselib.widget.operateEditText.OperateEditText
+        android:id="@+id/oet_account"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_60"
+        android:hint="请输入账号"
+        android:paddingHorizontal="@dimen/dp_20"
+        app:operatorType="clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <com.devmeng.baselib.widget.operateEditText.OperateEditText
+        android:id="@+id/oet_psw"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:paddingHorizontal="@dimen/dp_20"
+        app:operatorType="psw"
+        app:layout_constraintEnd_toEndOf="@+id/oet_account"
+        app:layout_constraintStart_toStartOf="@+id/oet_account"
+        app:layout_constraintTop_toBottomOf="@+id/oet_account" />
+
+    <com.devmeng.baselib.widget.operateEditText.OperateEditText
+        android:id="@+id/oet_correct_psw"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:paddingHorizontal="@dimen/dp_20"
+        app:operatorType="correct_psw"
+        app:layout_constraintEnd_toEndOf="@+id/oet_account"
+        app:layout_constraintStart_toStartOf="@+id/oet_account"
+        app:layout_constraintTop_toBottomOf="@+id/oet_psw" />
+
+    <com.devmeng.baselib.widget.CornerShadowLayout
+        android:id="@+id/cs_register"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="@dimen/dp_60"
+        app:allCornerRadius="@dimen/dp_20"
+        app:backColor="@color/color_black_333"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_go_sign_in"
+        app:shadeColor="@color/color_gray_8A8A8A"
+        app:shadeRadius="@dimen/dp_6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_register"
+            android:textColor="@color/color_white_FFF"
+            android:textSize="@dimen/dp_20"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </com.devmeng.baselib.widget.CornerShadowLayout>
+
+    <TextView
+        android:id="@+id/tv_go_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="前往登录"
+        android:textColor="@color/color_teal_700"
+        app:layout_constraintEnd_toEndOf="@+id/oet_psw"
+        app:layout_constraintTop_toBottomOf="@+id/oet_correct_psw" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

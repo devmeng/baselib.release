@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="skinTypeface" format="string" />
+    <declare-styleable name="ChatMessageItem">
+
+    </declare-styleable>
+    <declare-styleable name="BaseToolBar">
+        <attr name="isEndToolAvailable" format="boolean" />
+        <attr name="backIconRes" format="reference" />
+        <attr name="titleText" format="string" />
+        <attr name="titleTextSize" format="dimension" />
+        <attr name="titleTextColor" format="reference|color" />
+        <attr name="titleGravity" format="enum">
+            <enum name="center" value="0x11" />
+            <enum name="start" value="0x00800003" />
+        </attr>
+        <attr name="titlePaddingHorizontal" format="dimension" />
+        <attr name="endIconRes" format="reference" />
+        <attr name="endIconTint" format="reference|color" />
+    </declare-styleable>
+    <declare-styleable name="OperateEditText">
+        <attr name="operatorType" format="enum">
+            <enum name="none" value="0" />
+            <enum name="clear" value="1" />
+            <enum name="psw" value="2" />
+            <enum name="correct_psw" value="3" />
+        </attr>
+        <attr name="operatorRes" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="OperateWidget">
+        <attr name="operateType" format="enum">
+            <enum name="back" value="1" />
+            <enum name="search" value="2" />
+            <enum name="add" value="3" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="SearchOperateView">
+        <attr name="android:padding" format="dimension" />
+        <attr name="android:paddingVertical" format="dimension" />
+        <attr name="android:paddingHorizontal" format="dimension" />
+        <attr name="operateTitle" format="string" />
+        <attr name="titleColor" format="color|reference" />
+        <attr name="initialDataCount" format="integer" />
+        <attr name="titleSize" format="dimension" />
+        <attr name="itemTxtSize" format="dimension" />
+        <attr name="spaceBetween" format="dimension" />
+        <attr name="itemHeight" format="dimension" />
+        <attr name="tvBottomClearTxtColor" format="color|reference" />
+        <attr name="searchOperateViewType" format="enum">
+            <enum name="linear" value="1" />
+            <enum name="grid" value="2" />
+            <!--            <enum name="staggered" value="3" />-->
+        </attr>
+        <attr name="dataType" format="enum">
+            <enum name="history" value="0x100" />
+        </attr>
+        <attr name="gridColumns" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="CornerShadowLayout">
+        <attr name="android:padding" />
+        <attr name="android:paddingHorizontal" />
+        <attr name="android:paddingVertical" />
+        <attr name="shadeRadius" format="dimension" />
+        <attr name="shadeColor" format="color|reference" />
+        <attr name="backRes" format="reference" />
+
+        <attr name="backColor" format="color|reference" />
+        <attr name="borderWidth" format="dimension" />
+        <attr name="borderColor" format="color|reference" />
+
+        <attr name="allCornerRadius" format="dimension" />
+
+        <!-- Radius of the top left corner. -->
+        <attr name="topLeftRadius" format="dimension" />
+        <!-- Radius of the top right corner. -->
+        <attr name="topRightRadius" format="dimension" />
+        <!-- Radius of the bottom left corner. -->
+        <attr name="bottomLeftRadius" format="dimension" />
+        <!-- Radius of the bottom right corner. -->
+        <attr name="bottomRightRadius" format="dimension" />
+
+    </declare-styleable>
+    <declare-styleable name="BottomTabLayout">
+        <attr name="humpLocation" format="enum">
+            <enum name="center" value="0" />
+            <enum name="start" value="1" />
+            <enum name="end" value="2" />
+        </attr>
+        <attr name="humpLocationOffsetX" format="dimension" />
+        <attr name="humpRadius" format="dimension" />
+        <attr name="humpCornerRadius" format="dimension" />
+        <attr name="humpIcon" format="reference" />
+        <attr name="layoutColor" format="reference|color" />
+        <attr name="shaderColor" format="reference|color" />
+        <attr name="shaderRadius" format="dimension" />
+        <attr name="humpIconSize" format="dimension" />
+        <attr name="humpAngle" format="integer" />
+    </declare-styleable>
+</resources>

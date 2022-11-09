@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.devmeng.baselib.widget.CornerShadowLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="240dp"
+    android:layout_height="300dp"
+    app:backColor="@color/color_white_FFF"
+    app:allCornerRadius="@dimen/dp_10"
+    app:shadeColor="@color/color_gray_8A8A8A"
+    app:shadeRadius="@dimen/dp_10"
+    android:layout_gravity="center"
+    tools:context="ui.tinker.UpgradeActivity">
+
+    <TextView
+        android:id="@+id/tv_upgrade_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp"
+        android:text="StudyProject"
+        android:textColor="#000"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_upgrade_version_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/upgrade_version_num"
+        android:textColor="#444"
+        app:layout_constraintStart_toStartOf="@+id/tv_upgrade_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_upgrade_title" />
+
+    <TextView
+        android:id="@+id/tv_upgrade_apk_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/upgrade_apk_size"
+        android:textColor="#444"
+        app:layout_constraintStart_toStartOf="@+id/tv_upgrade_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_upgrade_version_num" />
+
+    <TextView
+        android:id="@+id/tv_upgrade_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/upgrade_time"
+        android:textColor="#444"
+        app:layout_constraintStart_toStartOf="@+id/tv_upgrade_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_upgrade_apk_size" />
+
+    <TextView
+        android:id="@+id/tv_upgrade_introduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/upgrade_introduce"
+        android:textColor="#555"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_upgrade_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_upgrade_time" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="10dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_upgrade_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_upgrade_introduce">
+
+        <TextView
+            android:id="@+id/tv_upgrade_introduce_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:isScrollContainer="true"
+            android:textColor="#555"
+            android:textSize="16dp" />
+
+    </ScrollView>
+
+    <com.devmeng.baselib.widget.CornerShadowLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:bottomLeftRadius="@dimen/dp_10"
+        app:bottomRightRadius="@dimen/dp_10"
+        app:backColor="@color/color_blue_1BB6FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tv_upgrade_next_time"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:backgroundTint="#CDCDCD"
+            android:gravity="center"
+            android:text="下次再说"
+            app:layout_constraintBottom_toBottomOf="@id/tv_upgrade_start"
+            app:layout_constraintEnd_toStartOf="@id/tv_upgrade_start"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_upgrade_start" />
+
+        <TextView
+            android:id="@+id/tv_upgrade_start"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="立即体验"
+            android:textColor="#444"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintCircleRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_upgrade_next_time" />
+
+    </com.devmeng.baselib.widget.CornerShadowLayout>
+
+</com.devmeng.baselib.widget.CornerShadowLayout>

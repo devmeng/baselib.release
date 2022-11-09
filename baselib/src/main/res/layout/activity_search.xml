@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SearchActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/top_container"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_60"
+        android:elevation="@dimen/dp_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.devmeng.baselib.widget.OperateWidget
+            android:id="@+id/operate_search_close"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dp_10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:operateType="back" />
+
+        <com.devmeng.baselib.widget.operateEditText.OperateEditText
+            android:id="@+id/edit_view_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:hint="@string/string_pls_input_key_words"
+            android:paddingHorizontal="@dimen/dp_10"
+            android:textColor="@color/color_black_333"
+            android:textColorHint="@color/color_gray_6C6C6C"
+            android:textSize="@dimen/dp_18"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/operate_search_go"
+            app:layout_constraintStart_toEndOf="@id/operate_search_close"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.devmeng.baselib.widget.OperateWidget
+            android:id="@+id/operate_search_go"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:padding="@dimen/dp_14"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:operateType="search" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.devmeng.baselib.widget.SearchOperateView
+        android:id="@+id/search_operate_view_history"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white_FFF"
+        android:paddingHorizontal="@dimen/dp_14"
+        android:paddingVertical="@dimen/dp_6"
+        app:initialDataCount="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_container"
+        app:operateTitle="历史搜索:"
+        app:searchOperateViewType="linear" />
+
+    <ImageView
+        android:layout_width="@dimen/dp_300"
+        android:layout_height="@dimen/dp_200"
+        android:background="@color/color_black_333"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.devmeng.baselib.widget.CornerShadowLayout
+        android:layout_width="@dimen/dp_300"
+        android:layout_height="@dimen/dp_200"
+        android:padding="@dimen/dp_40"
+        app:allCornerRadius="@dimen/dp_20"
+        app:backColor="@color/color_white_FFF"
+        app:borderColor="@color/color_black_333"
+        app:backRes="@drawable/icon5"
+        app:borderWidth="@dimen/dp_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shadeColor="@color/color_black_333"
+        app:shadeRadius="@dimen/dp_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TestView"
+            android:textColor="@color/color_black_333"
+            android:textSize="@dimen/dp_40"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TestView"
+            android:textColor="@color/color_black_333"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </com.devmeng.baselib.widget.CornerShadowLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

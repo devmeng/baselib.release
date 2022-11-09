@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.devmeng.baselib.widget.CornerShadowLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/dp_20"
+    android:paddingVertical="@dimen/dp_10"
+    app:allCornerRadius="@dimen/dp_14"
+    app:backColor="@color/color_white_FFF"
+    app:borderColor="@color/color_black_333"
+    app:borderWidth="@dimen/dp_1"
+    app:shadeColor="@color/color_black_333"
+    app:shadeRadius="@dimen/dp_10">
+
+    <TextView
+        android:id="@+id/tv_toast_view_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ToastView"
+        android:textColor="@color/color_black_333"
+        android:textSize="@dimen/dp_20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</com.devmeng.baselib.widget.CornerShadowLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_purple_200">#FFBB86FC</color>
+    <color name="color_purple_500">#FF6200EE</color>
+    <color name="color_purple_700">#FF3700B3</color>
+    <color name="color_teal_200">#FF03DAC5</color>
+    <color name="color_teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="color_white_FFF">#FFFFFF</color>
+    <color name="color_green_31E187">#31E187</color>
+    <color name="color_gray_ACACAC">#ACACAC</color>
+    <color name="color_gray_E1E1E1">#E1E1E1</color>
+    <color name="color_gray_F8F8F8">#F8F8F8</color>
+    <color name="color_black_333">#333333</color>
+    <color name="color_red_F44336">#F44336</color>
+    <color name="color_red_FF4E4E">#FF4E4E</color>
+    <color name="color_gray_8A8A8A">#8A8A8A</color>
+    <color name="color_gray_6C6C6C">#6C6C6C</color>
+    <color name="color_black_202020">#202020</color>
+
+    <color name="color_blue_1BB6FF">#1BB6FF</color>
+
+    <!--  透明  -->
+    <color name="color_trans_0">#00000000</color>
+    <color name="color_trans_10">#1A000000</color>
+    <color name="color_trans_20">#33000000</color>
+    <color name="color_trans_30">#4D000000</color>
+    <color name="color_trans_40">#66000000</color>
+
+    <color name="testCSL_shadow_color">#FF4E4E</color>
+</resources>

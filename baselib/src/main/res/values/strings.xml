@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  保留小数后两位  -->
+    <string name="format_num_percent">%d%%</string>
+    <string name="keep_2_decimals">%.2f</string>
+    <string name="upgrade_version_num">版本号：%1$s</string>
+    <string name="upgrade_apk_size">更新大小：%1$sMB</string>
+    <string name="upgrade_time">更新时间：%1$s</string>
+    <string name="upgrade_introduce">更新说明：</string>
+    <string name="upgrade_experience">立即体验</string>
+    <string name="upgrade_re_download">重新下载</string>
+    <string name="upgrade_install">立即安装</string>
+    <string name="resume_upgrade">继续下载</string>
+    <string name="format_android_call_h5_method">javascript:%1$s(%2$s)</string>
+    <string name="format_lottie_name_images_assets_folder">lottie/%1$s/images</string>
+    <string name="format_lottie_name_anim_json">lottie/%1$s/data.json</string>
+    <string name="string_pls_input_key_words">请输入关键字</string>
+    <string name="string_pls_input_account">请输入账号</string>
+    <string name="string_pls_input_psw">请输入密码</string>
+    <string name="string_pls_correct_psw">请确认密码</string>
+    <string name="string_pls_judge_not_equals">两次密码不一致</string>
+    <string name="string_all_search_history">全部搜索记录</string>
+    <string name="string_clear_all_search_history">清除全部搜索记录</string>
+    <string name="string_sign_in">登录</string>
+    <string name="string_register">注册</string>
+    <string name="string_txt_send">发送</string>
+    <string name="skin_ttf_chu_chen_ti" />
+    <bool name="test">true</bool>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  test  -->
+    <string name="tinker_app_id">f0a889f1b4</string>
+    <string name="net_easy_im_app_key">643f5f28b64e660190bf2f1fcda98e06</string>
+    <!--  注意：AppSecret 可能会在网易云信的管理平台刷新  -->
+    <string name="net_easy_im_app_secret">0ea49dc5fb92</string>
+</resources>
